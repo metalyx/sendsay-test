@@ -8,7 +8,7 @@
 
 ## Где посмотреть демо?
 
-  На netlify: *Здесь будет ссылка*
+  На netlify: https://cute-rolypoly-83a40d.netlify.app/
 
 ## Автор
   - Email: metalyx3@gmail.com
