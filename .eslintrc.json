@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "linebreak-style": "off",
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "jsx-quotes": [2, "prefer-single"],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+        "import/prefer-default-export": "off",
+        "arrow-parens": "off",
+        "react/function-component-definition": "off",
+        "react/require-default-props": "off",
+        "no-unused-vars": "warn",
+        "default-param-last": "off"
+    },
+    "settings": {
+        "import/extensions": [
+            "warn",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "arrow-parens": "off"
+    }
+}

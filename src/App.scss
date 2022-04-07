@@ -1,0 +1,23 @@
+.App {
+  background-color: rgb(229, 229, 229);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: 640px;
+    height: 695px;
+    background-color: #fff;
+    display: flex;
+
+    .wrapper__left-column {
+      margin-left: 55px;
+      margin-top: 40px;
+      width: 243px;
+    }
+  }
+}

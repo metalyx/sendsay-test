@@ -1,0 +1,16 @@
+.numbers__wrapper {
+  display: grid;
+  grid-template-areas: 
+                      "a b c"
+                      "d f g"
+                      "h i j"
+                      "k k l";
+  grid-template-rows: 48px;
+  grid-template-columns: 72px;
+  gap: 8px;
+  height: 216px;
+
+  button:nth-child(10) {
+    grid-column: 1 / 3;
+  }
+}

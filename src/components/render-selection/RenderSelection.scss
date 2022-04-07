@@ -1,0 +1,32 @@
+div.shadowed {
+  margin-bottom: 8px !important;
+  padding-bottom: 8px !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #5D5FEF;
+  position: relative;
+}
+
+div.shadowed::after {
+  display: block;
+  position: relative;
+  content: '';
+  background: #5D5FEF;
+  width: 5px;
+  height: 5px;
+  transform: rotateZ(45deg);
+
+  top: 11px;
+  left: -3px;
+}
+
+div.shadowed::before {
+  display: block;
+  position: absolute;
+  content: '';
+  background: #5D5FEF;
+  width: 5px;
+  height: 5px;
+  transform: rotateZ(45deg);
+  bottom: -3px;
+  left: 100%;
+}

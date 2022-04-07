@@ -1,0 +1,19 @@
+.operators__wrapper {
+  width: 100%;
+  height: 48px;
+
+  .operators {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    button {
+      margin-right: 8px;
+    }
+
+    button:last-child {
+      margin: 0;
+    }
+  }
+}

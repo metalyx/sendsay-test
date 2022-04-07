@@ -1,0 +1,70 @@
+@import '../../styles/variables/fonts.scss';
+
+.calculator__wrapper {
+  width: 240px;
+  height: 495px;
+
+  font-family: Inter-Regular;
+  margin-left: 75px;
+  margin-top: 110px;
+
+  input { 
+    cursor: move !important;
+  }
+
+  .calculator__visible-input,
+  .calculator__operators,
+  .calculator__numbers,
+  .calculator__equal-button {
+    margin-bottom: 16px;
+    padding: 4px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  .calculator__visible-input.pointer-events,
+  .calculator__operators.pointer-events,
+  .calculator__numbers.pointer-events,
+  .calculator__equal-button.pointer-events {
+    box-shadow: unset;
+    cursor: default;
+
+    div {
+      cursor: default;
+    }
+  }
+
+  div {
+
+    cursor: move;
+    width: 100%;
+
+    div {
+      pointer-events: none;
+    }
+  }
+
+  div.pointer-events {
+
+    div {
+      pointer-events: all;
+    }
+  }
+
+  div.inactive {
+    opacity: 0.5;
+    pointer-events: none;
+    box-shadow: unset;
+    padding: 0;
+  }
+
+  div.in-constructor {
+    box-shadow: unset;
+    padding: 0;
+  }
+
+  div.not-draggable {
+    cursor: default;
+  }
+}

@@ -1,0 +1,35 @@
+.dropzone__wrapper {
+  border: 2px dashed #C4C4C4;
+  border-radius: 6px;
+
+  width: 243px;
+  height: 480px;
+
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+  }
+
+  .dropzone__span-primary {
+    color: #5D5FEF;
+    font-size: 14px;
+  }
+
+  .dropzone__span-default {
+    color: #6B7280;
+    font-size: 12px;
+    width: 106px;
+    text-align: center;
+    margin-top: 4px;
+  }
+}
+
+.dropzone__wrapper.ondragover {
+  background: #F0F9FF;
+}
